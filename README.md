@@ -6,10 +6,16 @@
 - npm start
 
 ### Library
-- Node JS             - Dotenv                        - MySql2
-- Express JS          - JWT (JSON Web Token)          - Sequelize
-- Nodemon             - Bcrypt
-- Body-Parser         - Sequelize-Cli
+- Node JS
+- Express JS          
+- Sequelize
+- Sequelize-Cli
+- MySql2
+- Nodemon
+- Bcrypt
+- JWT (JSON Web Token)
+- Body-Parser         
+- Dotenv
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 ### End Point
 #### User
