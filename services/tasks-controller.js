@@ -106,6 +106,26 @@ class TaskControl {
             })
         }
     }
+
+    static async deleteAllTasks(req, res) {
+        try {
+            const user = await User.findOne({where: { id: req.params.userId }})
+            if (!user) {
+                res.status(401).send({
+                    message: 'Unauth­orized'
+                })
+            } else {
+                await Task.destroy({where : {user_id: user.id}})
+                res.status(200).send({
+                    message: "Semua Task Sudah Dihapus"
+                })   
+            }
+        } catch (error) {
+            res.status(500).send({
+                message: 'Terjadi Kesalahan Server'
+            })
+        }
+    }
 }
 
 module.exports = TaskControl

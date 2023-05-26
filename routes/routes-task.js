@@ -7,5 +7,6 @@ router.get("/users/:userId/tasks/:taskId", check, TaskController.getOneTask);
 router.post("/users/:userId/tasks", check, TaskController.addTask);
 router.put("/users/:userId/tasks/:taskId", check, TaskController.doneTask);
 router.delete("/users/:userId/tasks/:taskId", check, TaskController.deleteTask);
+router.delete("/users/:userId/tasks", check, TaskController.deleteAllTasks);
 
 module.exports = router;
