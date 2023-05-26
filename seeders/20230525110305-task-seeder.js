@@ -10,7 +10,7 @@ module.exports = {
         status: false,
         createdAt: new Date(),
         updatedAt: new Date(),
-        user_id: 3
+        user_id: 1
       },
       {
         title: 'Fitur Register',
@@ -18,7 +18,7 @@ module.exports = {
         status: false,
         createdAt: new Date(),
         updatedAt: new Date(),
-        user_id: 3
+        user_id: 1
       }
     ], {});
   },

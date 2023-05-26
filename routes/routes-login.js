@@ -1,15 +1,7 @@
-const route = require('express').Router() 
+const router = require("express").Router();
+const auth = require("../services/users-controller");
 
-route.post('/login', (req, res) => {
-    res.json({
-        message: 'User Login Success'
-    })
-})
+router.post("/login", auth.login);
+router.post("/register", auth.register);
 
-route.post('/register', (req, res) => {
-    res.json({
-        message: 'Registration Success'
-    })
-})
-
-module.exports = route
+module.exports = router;

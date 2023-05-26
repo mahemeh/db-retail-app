@@ -1,14 +1,14 @@
-const route = require('express').Router() 
-const todos = require('./routes-todos')
-const users = require('./routes-users')
+const router = require('express').Router() 
+const todos = require('./routes-task')
+const users = require('./routes-login')
 
-route.get('/', (req, res) => {
+router.get('/', (req, res) => {
     res.json({
-        message: 'This is Home'
+        message: 'Selamat Datang Di ToDo Apps'
     })
 })
 
-route.use(todos)
-route.use(users)
+router.use(todos)
+router.use(users)
 
-module.exports = route
+module.exports = router
