@@ -6,8 +6,8 @@ class TaskControl {
             const user = await User.findOne({where: { id: req.params.userId }})
             const tasks = await Task.findAll({where: { user_id: req.params.userId }})
             if (!user) {
-                res.status(403).send({
-                    message: 'Forbidden Request'
+                res.status(401).send({
+                    message: 'Unauthorized'
                 })    
             } else {
                 res.status(200).send(tasks)
@@ -43,8 +43,8 @@ class TaskControl {
             const newTask = req.body
             const user = await User.findOne({where: { id: req.params.userId }})
             if (!user) {
-                res.status(403).send({
-                    message: 'Forbidden Status'
+                res.status(401).send({
+                    message: 'Unauth­orized'
                 })
             } else {
                 const task = await Task.create({
@@ -69,8 +69,8 @@ class TaskControl {
             const updateTask = req.body
             const user = await User.findOne({where: { id: req.params.userId }})
             if (!user) {
-                res.status(403).send({
-                    message: 'Forbidden Status'
+                res.status(401).send({
+                    message: 'Unauth­orized'
                 })
             } else {
                 await Task.update({
@@ -91,8 +91,8 @@ class TaskControl {
         try {
             const user = await User.findOne({where: { id: req.params.userId }})
             if (!user) {
-                res.status(403).send({
-                    message: 'Forbidden Status'
+                res.status(401).send({
+                    message: 'Unauth­orized'
                 })
             } else {
                 await Task.destroy({ where : {id: req.params.taskId} })
