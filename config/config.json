@@ -1,23 +1,23 @@
 {
   "development": {
     "username": "root",
-    "password": "MahesaNurAlamsyah123",
-    "database": "todos",
-    "host": "localhost",
+    "password": "KQcepX1wpQPmO4tNhKi6",
+    "database": "railway",
+    "host": "containers-us-west-68.railway.app",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
-    "password": "MahesaNurAlamsyah123",
-    "database": "todos",
-    "host": "localhost",
+    "password": "KQcepX1wpQPmO4tNhKi6",
+    "database": "railway",
+    "host": "containers-us-west-68.railway.app",
     "dialect": "mysql"
   },
   "production": {
     "username": "root",
-    "password": "MahesaNurAlamsyah123",
-    "database": "todos",
-    "host": "localhost",
+    "password": "KQcepX1wpQPmO4tNhKi6",
+    "database": "railway",
+    "host": "containers-us-west-68.railway.app",
     "dialect": "mysql"
   }
 }

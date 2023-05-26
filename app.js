@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 const routes = require('./routes/index')
 const bodyParser = require('body-parser')
-const port = 3030
+const port = 6937
 
 require('dotenv').config()
 
