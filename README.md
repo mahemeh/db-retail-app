@@ -1,7 +1,6 @@
 ## TPA-005 (Back End Web Dev)
-
+-------------------------------------------------------------------------------------------------------------------------------------------------------
 ### How To Run
--------------------------------------|
 - npm init --y
 - npm install
 - npm start
@@ -11,10 +10,8 @@
 - Express JS          - JWT (JSON Web Token)          - Sequelize
 - Nodemon             - Bcrypt
 - Body-Parser         - Sequelize-Cli
-------------------------------------|
-
+-------------------------------------------------------------------------------------------------------------------------------------------------------
 ### End Point
-------------------------------------|
 #### User
 
 <details>
@@ -33,6 +30,7 @@
 > |---------------|-----------------------------------|---------------------------------------------------------------------|
 > | `201`         | `Akun berhasil dibuat!`           | `{name:newUser.name,email:newUser.email}`                           |
 > | `500`         | `Terjadi Kesalahan Server`        |                                                                     |
+</details>
 
 <details>
  <summary><code>POST</code> <code><b>/</b></code> <code>/login</code></summary>
@@ -51,8 +49,8 @@
 > | `201`         | `Akun berhasil dibuat!`           | `{name:newUser.name,email:newUser.email}`                           |
 > | `401`         | `Email atau Password Salah!`      | `{token:iajdasneqkwnejqwhejbqbsknsksad}`                            |
 > | `500`         | `Terjadi Kesalahan Server`        |                                                                     |
-
-----------------|  
+</details>
+ 
 #### Tasks
 
 <details>
@@ -66,7 +64,7 @@
 > | `401`         | `Unauthorized`                    |                                                                     |
 > | `500`         | `Terjadi Kesalahan Server`        |                                                                     |
 ----------------------------------------------------------------------------------------------------------------------------|
-
+</details>
 
 <details>
  <summary><code>GET</code> <code><b>/</b></code> <code>/users/:userId/tasks/:tasksId</code></summary>
@@ -79,7 +77,7 @@
 > | `401`         | `Unauthorized`                    |                                                                     |
 > | `500`         | `Terjadi Kesalahan Server`        |                                                                     |
 ----------------------------------------------------------------------------------------------------------------------------|
-
+</details>
 
 <details>
  <summary><code>POST</code> <code><b>/</b></code> <code>/users/:userId/tasks</code></summary>
@@ -92,7 +90,7 @@
 > | `401`         | `Unauthorized`                    |                                                                     |
 > | `500`         | `Terjadi Kesalahan Server`        |                                                                     |
 ----------------------------------------------------------------------------------------------------------------------------|
-
+</details>
 
 <details>
  <summary><code>PUT</code> <code><b>/</b></code> <code>/users/:userId/tasks/:tasksId</code></summary>
@@ -105,7 +103,7 @@
 > | `401`         | `Unauthorized`                    |                                                                     |
 > | `500`         | `Terjadi Kesalahan Server`        |                                                                     |
 ----------------------------------------------------------------------------------------------------------------------------|
-
+</details>
 
 <details>
  <summary><code>DELETE</code> <code><b>/</b></code> <code>/users/:userId/tasks/:tasksId</code></summary>
@@ -118,3 +116,4 @@
 > | `401`         | `Unauthorized`                    |                                                                     |
 > | `500`         | `Terjadi Kesalahan Server`        |                                                                     |
 ----------------------------------------------------------------------------------------------------------------------------|
+</details>
