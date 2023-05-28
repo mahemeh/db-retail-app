@@ -23,11 +23,11 @@
 <details>
  <summary><code>POST</code> <code><b>/</b></code> <code>/register</code></summary>
 
-##### Req-Body
+##### Req-Body (JSON)
 
-> | name      | email     |  password        |                                                                              |
-> |-----------|-----------|------------------|------------------------------------------------------------------------------|
-> | string    | string    | string           |                                                                              |
+> | name      | email     |  password        |
+> |-----------|-----------|------------------|
+> | string    | string    | string           |
 
 
 ##### Responses
@@ -87,7 +87,14 @@
 
 <details>
  <summary><code>POST</code> <code><b>/</b></code> <code>/users/:userId/tasks</code></summary>
+ 
+##### Req-Body (JSON)
 
+> | title      | description     |
+> |------------|-----------------|
+> | string     | string          |
+ 
+ 
 ##### Responses
 
 > | http code     | message                           | response                                                            |
@@ -101,6 +108,13 @@
 <details>
  <summary><code>PUT</code> <code><b>/</b></code> <code>/users/:userId/tasks/:tasksId</code></summary>
 
+##### Req-Body (JSON)
+
+> | status      |
+> |-------------|
+> | boolean     |
+ 
+ 
 ##### Responses
 
 > | http code     | message                           | response                                                            |
