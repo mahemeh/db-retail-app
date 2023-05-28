@@ -110,9 +110,9 @@
 
 ##### Req-Body (JSON)
 
-> | status      |
-> |-------------|
-> | boolean     |
+> | status             |
+> |--------------------|
+> | true (boolean)     |
  
  
 ##### Responses
